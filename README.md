@@ -103,7 +103,3 @@ This project is for educational use and can be reused with credits.
 
 ---
 
-## ✍️ Author
-
-**Your Name Here**
-B.Tech AIML, Galgotias University

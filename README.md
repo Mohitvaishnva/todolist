@@ -1,90 +1,109 @@
-Todo List Application (Java Swing)
-This project is a simple Todo List Application built using Java Swing. It allows you to add, delete, mark tasks as completed, and save/load tasks to/from a JSON file.
+# 📝 Todo List Application (Java Swing)
 
-Features
-✅ Add Tasks:
-You can add new tasks with a title, description, and an optional due date.
+A simple and user-friendly Todo List desktop application built using **Java Swing**. This application allows users to add, delete, mark tasks as completed, and save/load tasks using a JSON file.
 
-✅ Delete Tasks:
-Remove a selected task from the list.
+---
 
-✅ Mark as Completed:
-Mark a selected task as completed. Completed tasks are displayed in italic and grey color.
+## 📁 Project Structure
 
-✅ Save Tasks:
-Save all tasks to a tasks.json file.
+```
+TodoListApp/
+├── TodoListApp.java       # Main UI application code
+├── tasks.json             # Saved task data (auto-generated after saving)
+├── README.md              # Project documentation (this file)
+```
 
-✅ Load Tasks:
-Load tasks from the tasks.json file.
+---
 
-How It Works
-GUI Components:
+## 🚀 Features
 
-The application has input fields for title, description, and due date (yyyy-MM-dd).
+✅ Add new tasks with:
 
-A JList displays all tasks.
+* Title
+* Description
+* Due Date (in `yyyy-MM-dd` format)
 
-Buttons are provided for adding, deleting, marking as completed, saving, and loading tasks.
+✅ Display all tasks in a list
+✅ Delete selected tasks
+✅ Mark tasks as **completed**
+✅ Save tasks to a local `tasks.json` file
+✅ Load saved tasks from the file
+✅ Stylish GUI with task completion highlighting (gray + italic for completed)
 
-Data Model:
+---
 
-Tasks are represented by the Task class.
+## 🖥️ UI-Based
 
-Each task has a title, description, optional due date, and completion status.
+This is **not a console app**. It's a **desktop GUI** app using **Swing**, ideal for local task management.
 
-Task Management:
+---
 
-The task list is maintained using a DefaultListModel.
+## 🛠️ How to Run
 
-Tasks are displayed in the JList with a custom renderer (TaskListCellRenderer).
+1. Make sure you have **Java (JDK 8+)** installed.
+2. Open the project in an IDE (like IntelliJ, Eclipse, NetBeans) or use terminal.
+3. Compile and run:
 
-Saving/Loading:
+```bash
+javac TodoListApp.java
+java TodoListApp
+```
 
-Tasks are saved in a JSON file (tasks.json) using JSON.simple.
+---
 
-Each task's title, description, due date (if any), and completion status are stored.
+## 📂 Requirements
 
-On app startup, if tasks.json exists, tasks are automatically loaded.
+* Java 8 or later
+* `json-simple` library (for JSON parsing)
 
-Running the Application
-1️⃣ Prerequisites:
+You can download [json-simple jar](https://code.google.com/archive/p/json-simple/) and add it to your classpath.
 
-Java JDK 8 or later installed.
+---
 
-JSON.simple library in your classpath (e.g., json-simple-1.1.1.jar).
+## 📸 Screenshots (Optional)
 
-2️⃣ Compile:
+You can add screenshots in a `/screenshots` folder and show how the UI looks.
 
-bash
-Copy
-Edit
-javac -cp .;json-simple-1.1.1.jar TodoListApp.java
-(On macOS/Linux, use : instead of ; in classpath.)
+---
 
-3️⃣ Run:
+## 🧪 Testing & Validation
 
-bash
-Copy
-Edit
-java -cp .;json-simple-1.1.1.jar TodoListApp
-Notes
-Due Date Format:
+✅ All buttons and fields are tested
+✅ Validates empty input and date format
+✅ Loads/saves data correctly
+✅ No known runtime errors
 
-Due dates must be entered as yyyy-MM-dd (e.g., 2025-05-24).
+### ✅ Example Tasks Added:
 
-If left blank, the task has no due date.
+These are example entries you can try:
 
-Saving Tasks:
+1. **Title:** Submit Assignment
+   **Description:** Java Swing Todo App submission
+   **Due Date:** 2025-06-06
 
-When you click Save Tasks, the tasks are saved in tasks.json in the application's directory.
+2. **Title:** Grocery Shopping
+   **Description:** Buy milk, eggs, bread
+   **Due Date:** 2025-06-08
 
-Loading Tasks:
+3. **Title:** Team Meeting
+   **Description:** Discuss project status with team
+   **Due Date:** 2025-06-10
 
-Click Load Tasks to reload tasks from tasks.json.
+---
 
-Completed Tasks:
+## ⏳ Submission
 
-Completed tasks appear in italic and grey in the list.
+Please submit the **GitHub repository link** before the deadline.
 
-Dependencies
-JSON.simple (for JSON parsing and writing).
+---
+
+## 📄 License
+
+This project is for educational use and can be reused with credits.
+
+---
+
+## ✍️ Author
+
+**Your Name Here**
+B.Tech AIML, Galgotias University
